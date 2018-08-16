@@ -1,0 +1,42 @@
+MOVC R0 0
+MOVC R1 1
+MOVC R2 24
+MOVC R3 11
+MOVC R4 4
+ADD R5 R2 R3
+STORE R5 R0 4
+ADD R0 R0 R1
+SUB R4 R4 R1
+BNZ -4
+MOVC R6 3
+SUB R6 R6 R0
+BZ 2
+HALT
+MOVC R6 5
+HALT
+
+r0=0
+r1=1
+r2=24
+r3=11
+r4=4
+r5=35
+mem[4]=35
+r0=1
+r4=3
+r5=35
+mem[5]=35
+r0=2
+r4=2
+r5=35
+mem[6]=35
+r0=3
+r4=1
+r5=35
+mem[7]=35
+r0=4
+r4=0
+r6=3
+r6=-1
+
+
